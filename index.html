@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ferify | The Curated Canvas</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "surface": "#faf9f6",
+                "surface-variant": "#e1e3de",
+                "tertiary-fixed-dim": "#e5d1bf",
+                "on-primary-fixed-variant": "#5c5b5b",
+                "on-secondary": "#fef8ef",
+                "on-tertiary": "#fff7f3",
+                "surface-container-low": "#f4f4f0",
+                "surface-container-high": "#e7e9e4",
+                "on-primary-container": "#525151",
+                "inverse-surface": "#0d0f0d",
+                "on-error-container": "#6e1400",
+                "secondary-dim": "#56534c",
+                "tertiary-container": "#f4dfcc",
+                "primary-fixed": "#e5e2e1",
+                "background": "#faf9f6",
+                "surface-dim": "#d9dbd6",
+                "secondary": "#625f58",
+                "surface-bright": "#faf9f6",
+                "secondary-fixed": "#e8e2d9",
+                "on-primary-fixed": "#403f3f",
+                "on-tertiary-fixed-variant": "#67594a",
+                "on-error": "#fff7f6",
+                "on-primary": "#fbf8f8",
+                "primary-container": "#e5e2e1",
+                "tertiary-dim": "#5f5142",
+                "surface-container-highest": "#e1e3de",
+                "surface-container": "#eeeeea",
+                "inverse-primary": "#ffffff",
+                "error-container": "#fd795a",
+                "on-surface-variant": "#5d605c",
+                "outline": "#797b78",
+                "error": "#a73b21",
+                "on-tertiary-container": "#5d4f41",
+                "outline-variant": "#b0b3ae",
+                "secondary-container": "#e8e2d9",
+                "inverse-on-surface": "#9d9d9a",
+                "secondary-fixed-dim": "#d9d4cb",
+                "surface-container-lowest": "#ffffff",
+                "on-secondary-fixed-variant": "#5e5b54",
+                "on-background": "#303330",
+                "primary-dim": "#545353",
+                "on-surface": "#303330",
+                "tertiary": "#6b5c4e",
+                "tertiary-fixed": "#f4dfcc",
+                "primary": "#605f5f",
+                "on-tertiary-fixed": "#4a3d30",
+                "error-dim": "#791903",
+                "on-secondary-container": "#55514b",
+                "surface-tint": "#605f5f",
+                "primary-fixed-dim": "#d6d4d3",
+                "on-secondary-fixed": "#423f39"
+              },
+              fontFamily: {
+                "headline": ["Noto Serif"],
+                "body": ["Manrope"],
+                "label": ["Manrope"]
+              },
+              borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #605f5f 0%, #545353 100%);
+        }
+        .ghost-border {
+            outline: 1px solid rgba(176, 179, 174, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-tertiary-fixed selection:text-on-tertiary-container">
+<!-- Top Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-stone-50/80 dark:bg-stone-900/80 backdrop-blur-xl">
+<div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-serif tracking-tight text-stone-800 dark:text-stone-100">Ferify</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="manrope text-xs tracking-widest uppercase text-stone-900 dark:text-white border-b-2 border-stone-800 dark:border-stone-200 pb-1" href="#">Shop All</a>
+<a class="manrope text-xs tracking-widest uppercase text-stone-500 dark:text-stone-400 hover:text-stone-800 dark:hover:text-stone-200 transition-colors" href="#">New Arrivals</a>
+<a class="manrope text-xs tracking-widest uppercase text-stone-500 dark:text-stone-400 hover:text-stone-800 dark:hover:text-stone-200 transition-colors" href="#">Collections</a>
+<a class="manrope text-xs tracking-widest uppercase text-stone-500 dark:text-stone-400 hover:text-stone-800 dark:hover:text-stone-200 transition-colors" href="#">Lookbook</a>
+</div>
+<div class="flex items-center space-x-6">
+<button class="hover:opacity-70 transition-opacity duration-300 scale-95 active:duration-75">
+<span class="material-symbols-outlined text-stone-700 dark:text-stone-300">person</span>
+</button>
+<button class="hover:opacity-70 transition-opacity duration-300 scale-95 active:duration-75">
+<span class="material-symbols-outlined text-stone-700 dark:text-stone-300">shopping_bag</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[921px] flex items-center overflow-hidden px-8 max-w-screen-2xl mx-auto">
+<div class="relative z-10 max-w-2xl">
+<p class="font-label text-xs uppercase tracking-[0.2em] mb-4 text-tertiary">Spring Summer 2024</p>
+<h1 class="font-headline text-6xl md:text-8xl mb-8 leading-[1.1] -tracking-[0.02em]">The Poetry of <br/><span class="italic">Movement</span></h1>
+<div class="flex items-center gap-8">
+<button class="hero-gradient px-12 py-4 text-on-primary font-label text-xs uppercase tracking-widest hover:opacity-90 transition-all rounded-sm">
+                        Shop Now
+                    </button>
+<a class="font-label text-xs uppercase tracking-widest border-b-2 border-primary pb-1" href="#">View Lookbook</a>
+</div>
+</div>
+<div class="absolute right-0 top-0 w-2/3 h-full -z-10">
+<img alt="Editorial fashion photography" class="w-full h-full object-cover object-center grayscale-[20%]" data-alt="Elegant model wearing a flowing architectural linen dress in a minimalist stone gallery with soft natural morning sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbAKjsTpQl-flW-m9WarO9BlfpQSSiKAT2HfeY9anKXFvYCZz3AshNdNxYLvad82Hl9IiuB-e8xSvJ8nNYBhuohwA96gjGgL6XcTix7Q7aaZJ9UryDBB6M4rgJb_DsGzX_QItTDSGvp5e5RbkhkP3blYJzwKTUG20H92xodqJhaNfdzNcOiRhQ30JUmlO4Y4gFhlTelQWrKTctJF3pgAOVXgDVjnk5gpQD5sOx4ACg1647BiRkBL1uVc1XL-ruNT0EDlQiTeAT_Kzp"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-transparent to-transparent"></div>
+</div>
+</section>
+<!-- Featured Collections - Asymmetric Grid -->
+<section class="py-32 px-8 max-w-screen-2xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
+<div class="max-w-md">
+<p class="font-label text-xs uppercase tracking-widest text-tertiary mb-2">Curated Categories</p>
+<h2 class="font-headline text-4xl">Timeless Essentials</h2>
+</div>
+<div class="h-px bg-outline-variant/20 flex-grow mx-8 mb-4 hidden md:block"></div>
+<button class="font-label text-xs uppercase tracking-widest underline decoration-tertiary underline-offset-8">Explore All</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Large Feature -->
+<div class="md:col-span-7 group cursor-pointer">
+<div class="bg-surface-container-lowest overflow-hidden mb-6 aspect-[4/5] relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Close up of high quality wool coat texture in beige tones against a neutral studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4EMj7WGnB329sLUd92ZQ-32b1Gi26OXaXssnrlScE9daeytfTOUnxT9HJfDusnZCfdwKHbk9-66tACMfnFiitMkG16k-mbdTlvvxUtNN-hSU3UVnQNwDihFozDn-6_BbgWu4Rvvvbw6U1faURiAxBX916PGUwG89C5YSv5xaGog7wYpqP3NjFWCJopD6aZMVo4XvAMBACYzBzp2oWr6UWYM0wAI4m46s42YSvkDqR3OT-VGoKZQSuS5PuGEC-ekj-LoIL5hCaJDjN"/>
+<div class="absolute top-6 left-6 bg-surface/80 backdrop-blur-md px-4 py-2 text-[10px] uppercase tracking-widest">Limited Edition</div>
+</div>
+<div class="flex justify-between items-baseline">
+<h3 class="font-headline text-2xl">The Heirloom Coat</h3>
+<p class="font-body text-lg text-secondary">$840.00</p>
+</div>
+</div>
+<!-- Secondary Stacks -->
+<div class="md:col-span-5 flex flex-col gap-12">
+<div class="group cursor-pointer">
+<div class="bg-surface-container-lowest overflow-hidden mb-4 aspect-square">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Minimalist flat lay of a silk blouse and silver jewelry on a cream surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCok0Fpb-LInr6VMyixAu2gdo3ovjovP1itQNsmYAfKeaxFjE6uaaYVWlRQZJtH-simAwJ1gjPEz9cP3tTsH08Tdh3p6Ss6d5fKg86jll3hd3EDUBwBXbacdu9nNuOUduH98XVl4UAZcHn4vi3dD-EExLutMAvsHHyLvI_UB8zmhx61A_DkYRu-jPtCYZ3A3Ck4vYXMw_vlHjtJHkJ-bn2I9_b51U6apGQdZFN9vM_nps2C-bysyEAwMu_6vemkfz3VhGdPLrD8s9vq"/>
+</div>
+<h3 class="font-headline text-xl">Silken Basics</h3>
+<p class="font-label text-[10px] uppercase tracking-widest text-tertiary mt-2">New Arrival</p>
+</div>
+<div class="group cursor-pointer">
+<div class="bg-surface-container-lowest overflow-hidden mb-4 aspect-square">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Detailed shot of pleated trousers hanging in a high-end boutique environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtfA0KVmsnX-s-NCmtPkwgv_sXA229S09vRvB12R6v8g2rn5SbIR3IAPnYUBs-RBarxQyDwVjxOfwoSqCTCZcviwR3EOxo-F7ZKRPbCkPOA_H7RPDn3CXI0AKYFL_DRf71VS116WlSvYEXZy_S5DwUSkhDybRrf8oAn_DniVvsDfq7Rhuh6LgYp0rmZ9WmGzYvHRivLAqKI80zGPiFLXbuEEzyUKvVe0wCxITwg6DwvroMqo8b8W4NjFNpJO8oVG0JMUU7miBcUB5c"/>
+</div>
+<h3 class="font-headline text-xl">Tailored Linen</h3>
+<p class="font-label text-[10px] uppercase tracking-widest text-tertiary mt-2">Pre-Order</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Tonal Shift Section - Testimonials -->
+<section class="bg-surface-container-low py-32">
+<div class="max-w-screen-xl mx-auto px-8 text-center">
+<span class="material-symbols-outlined text-4xl text-tertiary mb-8">format_quote</span>
+<div class="max-w-3xl mx-auto">
+<p class="font-headline text-3xl md:text-4xl italic leading-relaxed text-on-surface">
+                        "Ferify has redefined my wardrobe with pieces that feel like a second skin. The attention to textile and silhouette is truly unmatched in contemporary fashion."
+                    </p>
+<div class="mt-12">
+<p class="font-label text-xs uppercase tracking-[0.3em]">Eleanor Vance</p>
+<p class="text-secondary text-sm mt-1">Creative Director, Studio IV</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Instagram Feed - Bento Grid Style -->
+<section class="py-32 px-8 max-w-screen-2xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline text-3xl mb-4">Worn by You</h2>
+<p class="font-label text-xs uppercase tracking-widest text-tertiary">#FerifyJournal</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="aspect-square bg-surface-container overflow-hidden group">
+<img class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity" data-alt="Street style photo of a person wearing a beige oversized sweater in a sun-drenched city lane" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGForkthVLiASFm6Luq-53TteqjfFXAycgXgHR2s-FdYST_iYzKDDhEupI6Et4TCYxxBahO4EiLSr9LmqckdBi3y1XncsH6DJ0cQRh98rW4yNPmHUqD02hUIdY06u_zwQUvK-z-tmmTN2Etppt2Ke7tz0KFA19ppph2L5KoGOshubFtKO0pjzIdNq-Sr3qEGr_mjI4EhEUBiah5rjlBksoXpvFckukNpLv0gze_n4PblGcyS9YWEzE9FRjxevX7Gytb10JS5_B8eQ9"/>
+</div>
+<div class="aspect-[3/4] md:row-span-2 bg-surface-container overflow-hidden group">
+<img class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity" data-alt="Portrait of a woman wearing minimalist gold earrings and a white linen shirt" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3ry2oH9VzaqUX32TmaohuopV5I-9nCjgym1lrENlgeTtO_NOw7SCJl9-FyJw4lcYMV8Zr54ubDo3qYKNAgCp0qnUEY09YN0wERQxeHnxiA0Xwt1-Sq_gBFiBp2_Q-J99aUceP9Tegpj8aHx4qcTvjtIC8TWr0OhqpCzRZiTL1fq90icUAu4CYf3jXYXqcDHFX6YQ2ghrJaRhFw6ZFrQB9LoCCsH15j-GwFkry_yTi9HtXoX_48zmcf1GHOzANk4k6LQeFnJFQPBZz"/>
+</div>
+<div class="aspect-square bg-surface-container overflow-hidden group">
+<img class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity" data-alt="Lifestyle shot of a designer handbag on a wooden cafe table next to a coffee cup" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzs8G9GLWuhqB9q0ZJpWX2go-NVfBeBc6Vakt4IZVTKBHiVjF_xwp5X3xJ96N_K3D-Kc_ezX716bUvRwHP3Th8tnQfKrLbkCCWH1M8IyC5RSSeBtZp5i4bCGF0Etf9e5rsEL8tLs-EmjRpIdZyv1BpYOn8jVYvrJwh8_0gZmFEqiCaoWrHCs782ci2axHRwuzbYQCARZAD07AMcmApiyf3moW7WCaNxoi7zA0VXTIO9q0OoTIBONBaPc8Uv3IKQVZ2U1n13lcGz69a"/>
+</div>
+<div class="aspect-[3/4] md:row-span-2 bg-surface-container overflow-hidden group mt-8 md:mt-0">
+<img class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity" data-alt="Model posing in a black evening dress against a weathered concrete wall in soft evening light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDe6Hf5oFH8ksBeh9LEkbMB0ODGasimlHhyEb5-6yBHaTVvU8w--g04NQowUFa1EHPPAv7YFGV9fusG4L65L9zVnqggvqufkIR44dUtNvt0LyjTyvDdceHascu4Wv47y5vEA1Z2zgvDiSkgCkPp_ebtSlCrqHilDcGbDdcoYYVZ5IYT9GRGX2v7H6_nZlCXz9OYi-8l2rhcFLBh743Tv1mlFSBETvNZFxlFDC9HieeBzzEn0XmO3thw0u4TbEOVXaFGRz0KYFTuTQXs"/>
+</div>
+<div class="aspect-square bg-surface-container overflow-hidden group">
+<img class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity" data-alt="Candid photo of a stylish person walking across a modern bridge at sunset" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_Buh9pq6RpOrne1cqBs79hT20E3ZR1HiXPDf1UHkkPe8k7Z0VnGgmqAhbxxqszNz9MtBTbCrayXzjWw4HLvB3Z5NtMgMJyri-mjs25EMxiFxY4UKmEPmYcGssP-cMhGL_1JZXJPhFtdV3P7BJGFvDy-MDsD-js_MBm-kll7lSFZ7Rv-nL1cRQ6huJkdnPyrbW66iaroxyvcg49LZWdPWxNUm3tZ0vo-NV_PEfmyEHpmHpnsxCChOWYanX0LsCnrkpk3QXa4L0wrd1"/>
+</div>
+<div class="aspect-square bg-surface-container overflow-hidden group">
+<img class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity" data-alt="Close up of high end leather sandals on a stone floor with hard geometric shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOWQw7NVxQhzKJ4mbX_WojhW5ShQH0h2kg1WMF_5M55JZOurv63F9ouVAzumRioMTEkxQ_lKdCMiGOoHPXGl3h_shafguvt955MccHRH8e8hk1oKTRj3IV7M2E-2tR6rBIEHbDgRNxB3_SvFYwb7ZrAqDM35jbmQmyTdNSXNJ9si4i8CIROZPKr4hcwoIsgBiyrWSzNoWEcbyM8F8kMCVzWACq-H5KBuKIUToTwA2L4Vm3k8DJpCCp7vF-J3HejAvEhXXsfVWJiOEl"/>
+</div>
+</div>
+</section>
+<!-- Newsletter -->
+<section class="py-32 px-8 border-t border-outline-variant/10">
+<div class="max-w-2xl mx-auto text-center">
+<h2 class="font-headline text-3xl mb-4">The Journal</h2>
+<p class="text-secondary mb-12">Sign up for early access to new collections and editorial stories.</p>
+<form class="flex flex-col md:flex-row gap-4">
+<input class="flex-grow bg-surface-container-low border-0 border-b border-outline-variant/30 focus:ring-0 focus:border-primary px-4 py-4 font-body text-sm transition-all" placeholder="Email Address" type="email"/>
+<button class="bg-primary text-on-primary px-12 py-4 font-label text-xs uppercase tracking-widest hover:bg-primary-dim transition-colors" type="submit">Join</button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-stone-100 dark:bg-stone-950 w-full border-t border-stone-200/20 dark:border-stone-800/20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 py-16 max-w-screen-2xl mx-auto">
+<div class="space-y-6">
+<div class="font-serif text-xl text-stone-800 dark:text-stone-200">Ferify</div>
+<p class="manrope text-sm text-stone-600 dark:text-stone-400 max-w-xs leading-relaxed">
+                    Crafting a new standard in luxury essentials. Designed for longevity, inspired by the silent strength of minimalism.
+                </p>
+</div>
+<div class="space-y-6">
+<h4 class="notoSerif text-lg text-stone-800 dark:text-stone-200">Customer Care</h4>
+<ul class="space-y-4">
+<li><a class="manrope text-sm text-stone-500 hover:text-stone-800 dark:hover:text-stone-200 underline decoration-stone-300 dark:decoration-stone-700 underline-offset-4 transition-all" href="#">Size Guide</a></li>
+<li><a class="manrope text-sm text-stone-500 hover:text-stone-800 dark:hover:text-stone-200 underline decoration-stone-300 dark:decoration-stone-700 underline-offset-4 transition-all" href="#">Shipping &amp; Returns</a></li>
+<li><a class="manrope text-sm text-stone-500 hover:text-stone-800 dark:hover:text-stone-200 underline decoration-stone-300 dark:decoration-stone-700 underline-offset-4 transition-all" href="#">Contact Us</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h4 class="notoSerif text-lg text-stone-800 dark:text-stone-200">Company</h4>
+<ul class="space-y-4">
+<li><a class="manrope text-sm text-stone-500 hover:text-stone-800 dark:hover:text-stone-200 underline decoration-stone-300 dark:decoration-stone-700 underline-offset-4 transition-all" href="#">Sustainability</a></li>
+<li><a class="manrope text-sm text-stone-500 hover:text-stone-800 dark:hover:text-stone-200 underline decoration-stone-300 dark:decoration-stone-700 underline-offset-4 transition-all" href="#">Newsletter</a></li>
+<li><a class="manrope text-sm text-stone-500 hover:text-stone-800 dark:hover:text-stone-200 underline decoration-stone-300 dark:decoration-stone-700 underline-offset-4 transition-all" href="#">Press</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h4 class="notoSerif text-lg text-stone-800 dark:text-stone-200">Follow</h4>
+<div class="flex gap-4">
+<a class="opacity-80 hover:opacity-100 transition-all" href="#">
+<span class="material-symbols-outlined text-stone-600 dark:text-stone-400">nest_eco_leaf</span>
+</a>
+<a class="opacity-80 hover:opacity-100 transition-all" href="#">
+<span class="material-symbols-outlined text-stone-600 dark:text-stone-400">public</span>
+</a>
+</div>
+<div class="mt-8">
+<p class="manrope text-xs text-stone-500 uppercase tracking-widest">© 2024 Ferify. All rights reserved.</p>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
